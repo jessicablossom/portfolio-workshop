@@ -1,22 +1,22 @@
 nav {
-	height: 60px;
+	height: 70px;
     width: 100%;
     background-color: #BF5476;
     position: fixed;
     z-index: 9999;
 }
 
-ul li {
-	padding: 10px;
-}
-
 ul {
 	display: flex;
 	list-style-type: none;
 	justify-content: flex-end;
+
 	padding-right: 25px;
 }
 
+ul li {
+	padding: 10px;
+}
 
 nav a, a:active {
 	color: #F7F7FF;
@@ -28,9 +28,11 @@ nav a, a:active {
 nav a:hover{
 	color:#3E456C;
 }
+
 h1 {
 	font-size: 45px;
 }
+
 p {
   	font-family: 'Muli', sans-serif;
 	text-align: justify;
@@ -41,6 +43,7 @@ p {
 footer {
 	padding: 10px;
 }
+
 small {
 	text-align: right;
 }
@@ -48,7 +51,7 @@ small {
 .img-circle {
 	border-radius: 50%;
 	height: 150px;
-	margin: 15px;
+	margin: 20px;
 }
 
 .container div {	  
@@ -56,6 +59,17 @@ small {
 	justify-content: center;
 }
 
+.blank {
+	margin-top: -190px;
+}
+
+.opacity {
+	transition: opacity 0.5s ease-in-out;
+}
+
+.opacity:hover {
+	opacity: 0;
+}
 #home, #portfolio {
 	background-color: #F7F7FF;
 	color: #3E456C;
@@ -70,20 +84,23 @@ small {
 	height: 200px;
 	transition: all 1s ease-in-out
 }
+
 #portfolio .container div img:hover {
-	transform: scale(2, 2);
+	transform: scale(1.5, 1.5);
 	border: solid #95a5a6 1px;
 }
+
 #contact {
 	color: #F7F7FF;
 	background-color: #3E456C;
-	text-align: center;
 }
+
 #contact a, a:active {
 	text-decoration: none;
 	color: #BDD5EA;
 	transition: color 1s;
 }
+
 #contact a:hover {
 	color: #BF5476;
 }
