@@ -58,18 +58,14 @@ small {
 	display: inline-flex;
 	justify-content: center;
 }
-
-.blank {
-	margin-top: -190px;
+.filter {
+	filter: grayscale(75%);
+	transition: .5s ease-in-out;
+}
+.filter:hover {
+	filter:grayscale(0%);
 }
 
-.opacity {
-	transition: opacity 0.5s ease-in-out;
-}
-
-.opacity:hover {
-	opacity: 0;
-}
 #home, #portfolio {
 	background-color: #F7F7FF;
 	color: #3E456C;
@@ -82,7 +78,7 @@ small {
 
 #portfolio .container div img{
 	height: 200px;
-	transition: all 1s ease-in-out
+	transition: all .5s ease-in-out
 }
 
 #portfolio .container div img:hover {
